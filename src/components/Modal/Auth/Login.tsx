@@ -8,7 +8,7 @@ interface LoginProps {
 }
 
 const Login: React.FC<LoginProps> = () => {
-	const setAuthModalState = useSetRecoilState(authModalState);
+	// const setAuthModalState = useSetRecoilState(authModalState);
 
 	const [loginForm, setLoginForm] = useState({
 		email: "",
@@ -81,12 +81,13 @@ const Login: React.FC<LoginProps> = () => {
 					color="blue.500"
 					fontWeight={700}
 					cursor="pointer"
-					onClick={() =>
-						setAuthModalState((prev) => ({
-							...prev,
-							view: "signup",
-						}))
-					}>
+					// onClick={() =>
+					// 	setAuthModalState((prev) => ({
+					// 		...prev,
+					// 		view: "signup",
+					// 	}))
+					// }
+				>
 					SIGN UP
 				</Text>
 			</Flex>

@@ -10,7 +10,7 @@ interface RightContentProps {
 const RightContent: React.FC<RightContentProps> = () => {
 	return (
 		<>
-			<AuthModal />
+			{/* <AuthModal /> */}
 			<Flex justify="center" align="center">
 				<AuthButtons />
 			</Flex>

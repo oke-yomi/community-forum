@@ -6,7 +6,7 @@ import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
 import { auth } from "../../../firebase/clientApp";
 
 const SignUp: React.FC = () => {
-	const setAuthModalState = useSetRecoilState(authModalState);
+	// const setAuthModalState = useSetRecoilState(authModalState);
 
 	const [signUpForm, setSignUpForm] = useState({
 		email: "",
@@ -129,12 +129,13 @@ const SignUp: React.FC = () => {
 					color="blue.500"
 					fontWeight={700}
 					cursor="pointer"
-					onClick={() =>
-						setAuthModalState((prev) => ({
-							...prev,
-							view: "login",
-						}))
-					}>
+					// onClick={() =>
+					// 	setAuthModalState((prev) => ({
+					// 		...prev,
+					// 		view: "login",
+					// 	}))
+					// }
+				>
 					LOG IN
 				</Text>
 			</Flex>
